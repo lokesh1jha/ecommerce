@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <title>The Generics</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a class="active" href="home.html">HOME</a></li>
+                <li><a href="index.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <div class="popup">
+                <button id="open">Cart</button><span id="cart-number">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal-parent" id="cartWindow">
+        <div class="modal">
+            <div class="cart-items">
+                <img class="small-product" src="./images/Album 1.png" alt="">
+                <span class="item-name">Album 1</span>
+                <span class="quantity-box">1</span>
+                <span class="item-price">USD 579</span>
+                <span class="remove-item" id="remove">&times;</span>
+            </div>
+
+            <hr>
+            <div class="sub-total">
+                Subtotal USD 579
+            </div>
+
+            <div class="mid-btn">
+                <button>GO TO CART</button>
+                <button>CHECKOUT</button>
+            </div>
+
+            <div class="large-btn">
+                <button>CONTINUE SHOPPING</button>
+            </div>
+
+            <div class="rel-prod">
+                <span class="topic">RELATED PRODUCTS</span>
+                <img src="./images/Shirt.png" alt="">
+                <span class="name">Shirt</span>
+                <span class="price">USD 20</span>
+                <select class="size">
+                    <option value="XS">X-Small</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">X-Large</option>
+                    <option value="XXL">X-X-Large</option>
+                </select>
+                <button>ADD TO CART</button>
+                <button>CHECKOUT</button>
+
+            </div>
+            <span class="close-window" id="close">&times;</span>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>The Generics</h1>
+    </div>
+    <br>
+
+    <h2 class="sub-heading">MUSIC</h2>
+
+    <div id="music" class="container">
+        <div id="music-contenet" class="sub-container">
+            <div id="album1">
+                <h3>Album 1</h3>
+                <div class="image-container">
+                    <img src="./images/Album 1.png" alt="">
+                </div>
+                <div class="product-details">
+                    <span> $ 32.00</span>
+                    <button class="button-61" role="button">Add to cart</button>
+                </div>
+            </div>
+
+
+            <div id="album2">
+                <h3>Album 2</h3>
+                <div class="image-container">
+                    <img src="./images/Album 2.png" alt="">
+                </div>
+                <div class="product-details">
+                    <span> $ 12.00</span>
+                    <button class="button-61" role="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="music-contenet" class="sub-container">
+            <div id="album3">
+                <h3>Album 3</h3>
+                <div class="image-container">
+                    <img src="./images/Album 3.png" alt="">
+                </div>
+                <div class="product-details">
+                    <span> $ 10.00</span>
+                    <button class="button-61" role="button">Add to cart</button>
+                </div>
+            </div>
+
+            <div id="album4">
+                <h3>Album 4</h3>
+                <div class="image-container">
+                    <img src="./images/Album 4.png" alt="">
+                </div>
+                <div class="product-details">
+                    <span> $ 32.00</span>
+                    <button class="button-61" role="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2 class="sub-heading">MERCH</h2>
+
+    <div id="merch" class="container">
+        <div id="merch-contenet" class="sub-container">
+            <div id="merch1">
+                <h3>T Shirt</h3>
+                <div class="image-container">
+                    <img src="./images/Shirt.png" alt="">
+                </div>
+                <div class="product-details">
+                    <span> $ 42.00</span>
+                    <button class="button-61" role="button">Add to cart</button>
+                </div>
+            </div>
+
+
+            <div id="merch2">
+                <h3>Coffee</h3>
+                <div class="image-container">
+                    <img src="./images/Cofee.png" alt="">
+                </div>
+                <div class="product-details">
+                    <span> $ 12.00</span>
+                    <button class="button-61" role="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="see-cart">
+        <button><a href="#cart.html"> See The Cart </a></button>
+    </div>
+
+    <!-- Footing  -->
+    <div class="footer">
+        <h3 class="name">The Generics</h3>
+        <div class="logos">
+            <img src="./images/youtube-icon.jpg" alt="">
+            <img src="./images/spotify-icon.png" alt="">
+            <img src="./images/facebook-icon.png" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
