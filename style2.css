@@ -104,23 +104,25 @@ nav .popup {
   width: fit-content;
 }
 
-.see-cart{
+.order-now{
   display: flex;
   justify-content: center;
 }
 
-.see-cart button {
+.order-now button {
   border-radius: 0.3rem;
   padding: 12px 28px;
   background-color: gray;
   border: 0;
-}
-
-.see-cart a {
-  text-decoration: none;
   color: skyblue;
   font-weight: bold;
 }
+
+/* .order-now a {
+  text-decoration: none;
+  color: skyblue;
+  font-weight: bold;
+} */
 
 
 #side-bar {

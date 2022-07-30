@@ -1,7 +1,7 @@
 const open = document.getElementById('open');
 
 const container = document.getElementById('cartWindow')
-
+const orderNow = document.getElementById('orderNow')
 
 open.addEventListener("click", () => {
     getCartDetails();
@@ -64,7 +64,6 @@ function addToCart(productId) {
 
     axios.post('http://localhost:3000/cart', {productId : productId})
         .then(response => {
-            console.log(productId + typeof response.status);
             if(response.status === 200){
                 notifyUsers(response.data.message);
             }else {
@@ -134,4 +133,23 @@ function notifyUsers(message) {
         notification.innerHTML = '';
         console.log("removed");
     }, 2000)
+}
+
+orderNow.addEventListener('click', placeOrder);
+
+function placeOrder () {
+    console.log("Order Placed");
+    axios.post('http://localhost:3000/create-order')
+    .then(response => {
+        if(response.status === 200){
+            notifyUsers(response.data.message);
+        }else {
+            console.log("else executed");
+            throw new Error(response.data.message);
+        }
+    })
+    .catch(err => {
+        notifyUsers(err.message);
+        console.log("error" +err.message);
+    });
 }
