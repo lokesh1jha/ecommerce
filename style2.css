@@ -10,7 +10,7 @@ header {
     font-family: 'Lato', sans-serif;
     position: fixed;
     width: 100%;
-    margin-top: -67px;
+    top: 0;
 }
 
 nav {
@@ -53,7 +53,12 @@ nav span {
 }
 
 nav .popup {
-  margin-left: 432px;
+  margin-left: 30px;
+}
+
+#myorders {
+  width: fit-content;
+  margin-left: 300px;
 }
 
 .heading {
